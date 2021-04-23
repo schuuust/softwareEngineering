@@ -19,7 +19,9 @@ class PostsController < ApplicationController
   def edit
   end
 
+  
   # POST /posts or /posts.json
+  
   def create
     @post = Post.new(post_params)
 
@@ -33,7 +35,8 @@ class PostsController < ApplicationController
       end
     end
   end
-
+  
+  
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
     respond_to do |format|

@@ -16,4 +16,31 @@ RSpec.describe PostsController, type: :controller do
       expect(response).to be_success
     end
   end
+
+  context "GET #new" do
+    it "returns a successful response" do
+      get :new
+      expect(response).to be_success
+    end
+  end
+
+  context "POST #create" do
+    let!(:post) { Post.create(title: "Test title", description: "Test description") }
+    it "returns a success response" do
+      get :create, params: { id: post }
+      expect(response.content_type).to eq "text/html"
+    end
+  end
+
+  #functinal
+  context "DELETE #destroy" do
+  let!(:post) { Post.create(title: "Test title", description: "Test description") }
+  it "returns a success response" do
+    get :destroy, params: { id: post }
+    expect(response.content_type).to eq "text/html"
+  end
 end
+  
+  
+end
+
