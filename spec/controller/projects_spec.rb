@@ -24,18 +24,19 @@ RSpec.describe PostsController, type: :controller do
     end
   end
 
-  context "POST #create" do
-      it "creates a new Post" do
-        get :create, params: { title: "Test", description: "Tester" }
-        #expect(response.content_type).to eq "text/html"
-        post.save
-        expect(response.content_type).to eq "text/html"
-      end
+#  context "POST #create" do
+ #     it "creates a new Post" do
+  #      get :create, params: { title: "Test", description: "Tester" }
+   #     #expect(response.content_type).to eq "text/html"
+    #    post.save
+     #   expect(response.content_type).to eq "text/html"
+     
+     # end
 
-      it 'redirects to the created post' do
-        get :format
-        expect(response.content_type).to eq "text/html"
-      end
+      #it 'redirects to the created post' do
+       # get :format
+        #expect(response.content_type).to eq "text/html"
+      #end
 
     
 
@@ -47,7 +48,7 @@ RSpec.describe PostsController, type: :controller do
         #end
     #end
     
-  end
+  #end
 
   #functional
   context "DELETE #destroy" do
@@ -58,18 +59,18 @@ RSpec.describe PostsController, type: :controller do
   end
 end
 
-describe "PATCH #update" do
-  before :each do
-    get :patch, :post.save
-  end
+#describe "PATCH #update" do
+ # before :each do
+  #  get :patch, :post.save
+  #end
   #let!(:post) { Post.create(title: "Test title", description: "Test description") }
   
-    it "returns a success response" do
-        get :update, params: { id: post }
-        expect(response.content_type).to eq "text/html"
-  end
+   # it "returns a success response" do
+    #    get :update, params: { id: post }
+     #   expect(response.content_type).to eq "text/html"
+  #end
   
-end
+#end
   
   
 end
