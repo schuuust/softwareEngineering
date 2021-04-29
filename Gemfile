@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'friendly_id', '~> 5.1.0'
+gem 'devise'
 
 
 group :production do
