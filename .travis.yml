@@ -10,3 +10,11 @@ before_install:
 
 script:
  - bundle exec rspec
+ 
+deploy:
+ provider: heroku
+ api_key: 7047cbdb-43e3-4d40-84d6-ae1edb83875f #heroku authorizations:create
+ app: intense-headland-01100
+ run: "rake db:migrate"
+ on:
+  branch: main_or_master

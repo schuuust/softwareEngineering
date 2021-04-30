@@ -1,4 +1,6 @@
+
 class PostsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_post, only: %i[ show edit update destroy ]
 
   # GET /posts or /posts.json
@@ -19,7 +21,7 @@ class PostsController < ApplicationController
   def edit
   end
 
-  
+
   # POST /posts or /posts.json
   
   def create
