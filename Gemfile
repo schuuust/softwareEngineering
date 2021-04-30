@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
-
+gem 'factory_bot_rails'
 
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
