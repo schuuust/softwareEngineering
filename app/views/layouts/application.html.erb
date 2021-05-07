@@ -1,25 +1,99 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield (:page_title) %> | SoftwareEngineering</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
+<head>
+  <title>Software Engineering</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<a class="navbar-brand" href="#"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-  <body>
-  <ul>
-  <% if user_signed_in? %>
-    <li><%= link_to "Hi, #{current_user.email}", edit_user_registration_path %></li>
-    <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-    <li>Sign Out</li>
-  <% else %>
-    <li><%= link_to 'Sign In', new_user_session_path %></li>
-    <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-  <% end %>
-</ul>
-    <%= yield %>
-  </body>
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Sign in</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Sign up</a>
+    </li>
+
+  </ul>
+</div>
+</nav>
+<br>
+
+<div class="jumbotron text-center">
+  <h1>Projects Page</h1>
+  <p>A List of Projects</p> 
+</div>
+  
+<div class="container">
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-md-4">
+    <h2>Project 1</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-secondary" href="#" role="button">Open project &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h2>Project 2</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-secondary" href="#" role="button">Open project &raquo;</a></p>
+  </div>
+  <div class="col-md-4">
+    <h2>Project 3</h2>
+    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <p><a class="btn btn-secondary" href="#" role="button">Open project &raquo;</a></p>
+  </div>
+</div>
+
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+#<!DOCTYPE html>
+#<html>
+#  <head>
+#  
+#    <title><%= yield (:page_title) %> | SoftwareEngineering</title>
+#    <%= csrf_meta_tags %>
+#    <%= csp_meta_tag %>
+#
+#    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+#    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+#  </head>
+
+#  <body>
+#  <ul>
+#  <% if user_signed_in? %>
+#    <li><%= link_to "Hi, #{current_user.email}", edit_user_registration_path %></li>
+#    <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+#    <li>Sign Out</li>
+#  <% else %>
+#    <li><%= link_to 'Sign In', new_user_session_path %></li>
+#    <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+#  <% end %>
+#</ul>
+#    <%= yield %>
+#  </body>
+#</html>
