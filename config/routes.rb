@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'signup/index'
   get 'signin/index'
   get 'project3/index'
   get 'project2/index'
@@ -11,5 +12,6 @@ Rails.application.routes.draw do
   resources :project2
   resources :project3
   resources :signin
+  resources :signup
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
