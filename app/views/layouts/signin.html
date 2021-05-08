@@ -47,28 +47,26 @@
 
  </div>
 </div>
-<div class="main">
- <div class="text-center">
-    <div class="login-form">
-      <form class="new_student" id="new_student" action="/students/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="nYhQEPhBy4Rp__LrpSuexgGPDUyqA-FKt-8Pkdn5fc0FPw9oA1k7cVdulXRD3VE5ldpq_xTmJeDjHw9mbk6VoQ" />
-        <div class="field">
-          <label for="student_email">Email</label><br />
-          <input autofocus="autofocus" autocomplete="email" type="email" value="" name="student[email]" id="student_email" />
-        </div>
-      
-        <div class="field">
-          <label for="student_password">Password</label><br />
-          <input autocomplete="current-password" type="password" name="student[password]" id="student_password" />
-          <div class="actions">
-            <input type="submit" name="commit" value="Log in"  />
-          </div>
 
-          <p><a class="btn btn-secondary" href="signup" role="button">Sign up &raquo;</a></p>
-        </div>
-    </div>
- </div>
-  
+<form class="new_student" id="new_student" action="signin" accept-charset="UTF-8" method="post">
+  <div class="container">
+  <div class="field">
+    <label for="student_email">Email</label><br />
+    <input autofocus="autofocus" autocomplete="email" type="email" value="" name="student[email]" id="student_email" />
+  </div>
 
+  <div class="field">
+    <label for="student_password">Password</label><br />
+    <input autocomplete="current-password" type="password" name="student[password]" id="student_password" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Log in" data-disable-with="Log in" />
+  </div>
+</div>
+</form>
+
+</div>
 </div>
 
 </body>

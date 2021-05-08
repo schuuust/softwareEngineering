@@ -43,32 +43,35 @@
   </head>
 
   <div class="text-center">
-    <h2><br> Login Page</h2>
-    <p>Login or register from here to access.</p>
+
+
  </div>
 </div>
-<div class="main">
- <div class="text-center">
-    <div class="login-form">
-       <form>
-         <center>
-            <div class="container">
-                <label>Email</label>
-                <input type="email" class="form-control" placeholder="Email">
-             </div>
-          <div class="container">
-             <label>User Name</label>
-             <input type="text" class="form-control" placeholder="User Name">
-          </div>
-          <div class="container">
-             <label>Password</label>
-             <input type="password" class="form-control" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-black">Create account</button>
-        </center>
-       </form>
-    </div>
- </div>
+<form class="new_student" id="new_student" action="signup" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  
+  <div class="container">
+  <div class="field">
+    
+    <label for="student_email">Email</label><br />
+    <input autofocus="autofocus" autocomplete="email" type="email" value="" name="student[email]" id="student_email" />
+  </div>
+
+  <div class="field">
+    <label for="student_password">Password</label>
+    <em>(6 characters minimum)</em>
+    <br />
+    <input autocomplete="new-password" type="password" name="student[password]" id="student_password" />
+  </div>
+
+  <div class="field">
+    <label for="student_password_confirmation">Password confirmation</label><br />
+    <input autocomplete="new-password" type="password" name="student[password_confirmation]" id="student_password_confirmation" />
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Sign up" data-disable-with="Sign up" />
+  </div>
+  </div>
   
 
 </div>
