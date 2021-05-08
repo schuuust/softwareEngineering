@@ -55,13 +55,13 @@ RSpec.describe PostsController, type: :controller do
   #end
 
   #functional
-  context "DELETE #destroy" do
-  let!(:post) { Post.create(title: "Test title", description: "Test description") }
-  it "returns a success response" do
-    get :destroy, params: { id: post }
-    expect(response.content_type).to eq "text/html"
-  end
-end
+  #context "DELETE #destroy" do
+  #let!(:post) { Post.create(title: "Test title", description: "Test description") }
+  #it "returns a success response" do
+  #  get :destroy, params: { id: post }
+  #  expect(response.content_type).to eq "text/html"
+  #end
+#end
 
 #describe "PATCH #update" do
  # before :each do
