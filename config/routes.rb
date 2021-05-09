@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :signin
   resources :signup
   resources :sign_in
+  resources :users
   #post 'students/sign_in' to: 'signin#new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
